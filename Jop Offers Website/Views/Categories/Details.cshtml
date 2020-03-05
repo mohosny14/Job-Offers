@@ -1,0 +1,35 @@
+﻿@model Jop_Offers_Website.Models.Category
+
+@{
+    ViewBag.Title = "التفاصيل";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<h2>التفاصيل</h2>
+
+<div>
+    <h4>انواع الوظائف</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CategoryName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CategoryName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CatehoryDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CatehoryDescription)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("تعديل", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("العودة الى القائمه", "Index")
+</p>

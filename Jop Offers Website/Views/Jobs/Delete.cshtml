@@ -1,0 +1,62 @@
+﻿@model Jop_Offers_Website.Models.Job
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<h2>حذف الوظيفة</h2>
+
+<h3>هل أنت متأكد من حذف هذه ؟</h3>
+<div>
+   
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.category.CategoryName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.category.CategoryName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.JobName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.JobName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.JobContent)
+        </dt>
+
+        <dd>
+            @Html.Raw(HttpUtility.HtmlDecode(Html.DisplayFor(model => model.JobContent).ToString()))
+
+
+            @*@Html.DisplayFor(model => model.JobContent)*@
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.jobImage)
+        </dt>
+
+        <dd>
+            <img src="~/Uploads/@Html.DisplayFor(model => model.jobImage)"
+                 class="thumbnail"
+                 style="width:48px; height:48px;" />
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="تأكيد الحذف" class="btn btn-danger" /> |
+            @Html.ActionLink("العودة الى الوظائف", "Index")
+        </div>
+    }
+</div>

@@ -1,0 +1,217 @@
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\roslyn\csc.exe
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\roslyn\vbc.exe
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\roslyn\VBCSCompiler.exe
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\Jop Offers Website.dll.config
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\Jop Offers Website.dll
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\Jop Offers Website.pdb
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\EntityFramework.dll
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\EntityFramework.SqlServer.dll
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\System.Web.Helpers.dll
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\System.Web.Mvc.dll
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\System.Web.Razor.dll
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\System.Web.Webpages.dll
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\System.Web.Webpages.Razor.dll
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\EntityFramework.xml
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\EntityFramework.SqlServer.xml
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\System.Web.Razor.xml
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\System.Web.Webpages.xml
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\System.Web.Webpages.Razor.xml
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\System.Web.Helpers.xml
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\System.Web.Mvc.xml
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\obj\Debug\Jop Offers Website.dll
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\obj\Debug\Jop Offers Website.pdb
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\Antlr3.Runtime.dll
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\Microsoft.Owin.dll
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\Microsoft.Owin.Security.dll
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\Newtonsoft.Json.dll
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\Owin.dll
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\System.Web.Optimization.dll
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\WebGrease.dll
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\Antlr3.Runtime.pdb
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\Microsoft.Owin.xml
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\Microsoft.Owin.Security.xml
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\Newtonsoft.Json.xml
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\System.Web.Optimization.xml
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\obj\Debug\Jop_Offers_Website.Migrations.InitialCreate.resources
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\obj\Debug\Jop Offers Website.csproj.GenerateResource.Cache
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\obj\Debug\Jop_Offers_Website.Migrations.addColToUsers.resources
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\obj\Debug\Jop_Offers_Website.Migrations.CategoryTable.resources
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\obj\Debug\Jop_Offers_Website.Migrations.addjobmodel.resources
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\obj\Debug\Jop_Offers_Website.Migrations.newEvent.resources
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\obj\Debug\Jop_Offers_Website.Migrations.applyJobColumn.resources
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\obj\Debug\Jop_Offers_Website.Migrations.EditJobModel.resources
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\obj\Debug\Jop_Offers_Website.Migrations.changes.resources
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\obj\Debug\Jop Offers Website.csprojResolveAssemblyReference.cache
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\obj\Debug\Jop_Offers_Website.Views.Shared.SiteResource.resources
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\bin\ar\Jop Offers Website.resources.dll
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\obj\Debug\Jop_Offers_Website.Views.Shared.SiteResource.ar.resources
+C:\Users\Mohamed Hosny\documents\visual studio 2015\Projects\Jop Offers Website\Jop Offers Website\obj\Debug\ar\Jop Offers Website.resources.dll
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\roslyn\csc.exe
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\roslyn\System.Collections.Immutable.dll
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\roslyn\System.Reflection.Metadata.dll
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\roslyn\vbc.exe
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\roslyn\VBCSCompiler.exe
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\roslyn\VBCSCompiler.exe.config
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\Jop Offers Website.dll.config
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\Jop Offers Website.dll
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\Jop Offers Website.pdb
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\ar\Jop Offers Website.resources.dll
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\Antlr3.Runtime.dll
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\EntityFramework.dll
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\EntityFramework.SqlServer.dll
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\Microsoft.AspNet.Identity.Core.dll
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\Microsoft.Owin.dll
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\Microsoft.Owin.Security.Cookies.dll
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\Microsoft.Owin.Security.dll
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\Microsoft.Owin.Security.Google.dll
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\Microsoft.Owin.Security.OAuth.dll
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\Microsoft.Web.Infrastructure.dll
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\Newtonsoft.Json.dll
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\Owin.dll
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\System.Web.Helpers.dll
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\System.Web.Mvc.dll
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\System.Web.Optimization.dll
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\System.Web.Razor.dll
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\System.Web.Webpages.Deployment.dll
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\System.Web.Webpages.dll
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\System.Web.Webpages.Razor.dll
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\WebGrease.dll
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\Antlr3.Runtime.pdb
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\EntityFramework.xml
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\EntityFramework.SqlServer.xml
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\Microsoft.AspNet.Identity.Core.xml
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\Microsoft.Owin.xml
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\Microsoft.Owin.Security.xml
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\Microsoft.Owin.Security.Cookies.xml
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\Microsoft.Owin.Security.Google.xml
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\Microsoft.Owin.Security.OAuth.xml
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\Newtonsoft.Json.xml
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\System.Web.Optimization.xml
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\System.Web.Razor.xml
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\System.Web.Webpages.xml
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\System.Web.Webpages.Deployment.xml
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\System.Web.Webpages.Razor.xml
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\System.Web.Helpers.xml
+D:\New folder\Jop Offers Website\Jop Offers Website\bin\System.Web.Mvc.xml
+D:\New folder\Jop Offers Website\Jop Offers Website\obj\Debug\Jop Offers Website.csprojResolveAssemblyReference.cache
+D:\New folder\Jop Offers Website\Jop Offers Website\obj\Debug\Jop_Offers_Website.Migrations.InitialCreate.resources
+D:\New folder\Jop Offers Website\Jop Offers Website\obj\Debug\Jop_Offers_Website.Migrations.addColToUsers.resources
+D:\New folder\Jop Offers Website\Jop Offers Website\obj\Debug\Jop_Offers_Website.Migrations.CategoryTable.resources
+D:\New folder\Jop Offers Website\Jop Offers Website\obj\Debug\Jop_Offers_Website.Migrations.addjobmodel.resources
+D:\New folder\Jop Offers Website\Jop Offers Website\obj\Debug\Jop_Offers_Website.Migrations.newEvent.resources
+D:\New folder\Jop Offers Website\Jop Offers Website\obj\Debug\Jop_Offers_Website.Migrations.applyJobColumn.resources
+D:\New folder\Jop Offers Website\Jop Offers Website\obj\Debug\Jop_Offers_Website.Migrations.EditJobModel.resources
+D:\New folder\Jop Offers Website\Jop Offers Website\obj\Debug\Jop_Offers_Website.Migrations.changes.resources
+D:\New folder\Jop Offers Website\Jop Offers Website\obj\Debug\Jop_Offers_Website.Views.Shared.SiteResource.resources
+D:\New folder\Jop Offers Website\Jop Offers Website\obj\Debug\Jop_Offers_Website.Views.Shared.SiteResource.ar.resources
+D:\New folder\Jop Offers Website\Jop Offers Website\obj\Debug\Jop Offers Website.csproj.GenerateResource.Cache
+D:\New folder\Jop Offers Website\Jop Offers Website\obj\Debug\ar\Jop Offers Website.resources.dll
+D:\New folder\Jop Offers Website\Jop Offers Website\obj\Debug\Jop Offers Website.dll
+D:\New folder\Jop Offers Website\Jop Offers Website\obj\Debug\Jop Offers Website.pdb
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\roslyn\csc.exe
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\roslyn\System.Collections.Immutable.dll
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\roslyn\System.Reflection.Metadata.dll
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\roslyn\vbc.exe
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\roslyn\VBCSCompiler.exe
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\roslyn\VBCSCompiler.exe.config
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\Jop Offers Website.dll.config
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\Jop Offers Website.dll
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\Jop Offers Website.pdb
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\Antlr3.Runtime.dll
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\EntityFramework.dll
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\EntityFramework.SqlServer.dll
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\Microsoft.Owin.dll
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\Microsoft.Owin.Security.dll
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\Microsoft.Owin.Security.Google.dll
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\Microsoft.Web.Infrastructure.dll
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\Newtonsoft.Json.dll
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\Owin.dll
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\System.Web.Helpers.dll
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\System.Web.Mvc.dll
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\System.Web.Optimization.dll
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\System.Web.Razor.dll
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\System.Web.Webpages.Deployment.dll
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\System.Web.Webpages.dll
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\System.Web.Webpages.Razor.dll
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\WebGrease.dll
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\Antlr3.Runtime.pdb
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\EntityFramework.xml
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\EntityFramework.SqlServer.xml
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\Microsoft.Owin.xml
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\Microsoft.Owin.Security.xml
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\Microsoft.Owin.Security.Google.xml
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\Newtonsoft.Json.xml
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\System.Web.Optimization.xml
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\System.Web.Razor.xml
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\System.Web.Webpages.xml
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\System.Web.Webpages.Deployment.xml
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\System.Web.Webpages.Razor.xml
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\System.Web.Helpers.xml
+D:\Job Offers\Jop Offers Website\Jop Offers Website\bin\System.Web.Mvc.xml
+D:\Job Offers\Jop Offers Website\Jop Offers Website\obj\Debug\Jop Offers Website.dll
+D:\Job Offers\Jop Offers Website\Jop Offers Website\obj\Debug\Jop Offers Website.pdb
+D:\Job Offers\Jop Offers Website\Jop Offers Website\obj\Debug\Jop Offers Website.csprojResolveAssemblyReference.cache
+D:\Job Offers\Jop Offers Website\Jop Offers Website\obj\Debug\Jop_Offers_Website.Migrations.test3.resources
+D:\Job Offers\Jop Offers Website\Jop Offers Website\obj\Debug\Jop Offers Website.csproj.GenerateResource.Cache

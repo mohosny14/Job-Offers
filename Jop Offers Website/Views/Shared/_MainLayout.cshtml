@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/style.css" rel="stylesheet" />
+</head>
+<body>
+        <!--Nav Bar-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#navbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+
+                </button>
+                <!-- لينك صورة اللوجو-->
+                <a href="~/Home" class="navbar-brand">
+                    <img src="~/Images/logo.png" class="logo-size"/>
+                </a>
+            </div>
+            <!--NavBarالمحتوى الخاص بال-->
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="~/Home">
+                            <!--السطر دا خاص بشكل الايقونه ال  هتكون جمب العنوان-->
+                            <i class="glyphicon glyphicon-home"></i>
+                            الرئيسيه
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="~/Home/About">
+                            <!--السطر دا خاص بشكل الايقونه ال  هتكون جمب العنوان-->
+                            <i class="glyphicon glyphicon-info-sign"></i>
+                            عن الموقع
+                        </a>
+                    </li>
+                    <li>
+                        <a href="~/Home/Contact">
+                            <!--السطر دا خاص بشكل الايقونه ال  هتكون جمب العنوان-->
+                            <i class="glyphicon glyphicon-envelope"></i>
+                            اتصل بنا
+                        </a>
+                    </li>
+                    @*مربع البحث*@
+                    <li>
+                        @*create form using Razor 
+                        لما اختار السيرش يظهر الفورم*@
+                        @using (Html.BeginForm("Search", "home", FormMethod.Post))
+                        {
+                            <input type="text" name="searchName" id="searchName"
+                                   placeholder="ابحث هنا" />
+                        }
+                        
+
+                    </li>
+                </ul>
+
+                <!--Partial View Login-->
+                @Html.Partial("_Login")
+                <!--بين القوسين مسار الصفحة او اسمها لو هى فى نفس المجلد-->
+            </div>  
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row" style="min-height:440px;">
+            @RenderBody()
+        </div>
+
+    </div>
+       
+
+        <!--Footer-->
+    <footer class="myfooter">
+        <div class="container">
+            <div class="row">
+                <!-- المكون هنا من 3 عناصرfooter محتوى ال-->
+                <div class="col-md-4">
+                    <h3>
+                        <i class="glyphicon glyphicon-question-sign"></i>
+                        من نحن ؟ 
+                    </h3>
+                    <p>
+شركة softChallengers لتطوير البرامج
+                        جميع المجالات 
+                    </p>
+
+                </div>
+                <div class="col-md-4">
+                    <h3>
+                        <i class="glyphicon glyphicon-paperclip"></i>
+                        روابط مهمه 
+                    </h3>
+                    <ul>
+                        <li><a href="#">وظائف للقطاع الخاص</a></li>
+                        <li><a href="#">وظائف للقطاع العام</a></li>
+                        <li><a href="#">وظائف خارج البلاد</a></li>
+                        <li><a href="#">وظائف متنوعه</a></li>
+                    </ul>
+
+                </div>
+                <div class="col-md-4">
+                    
+                    <h3>
+                        <i class="glyphicon glyphicon-envelope"></i>
+                        تواصل معنا 
+                    </h3>
+                    <ul>
+                        <li><a href="#">صفحتنا على الفيس بوك</a></li>
+                        <li><a href="#">صحفتنا على تويتر</a></li>
+                        <li><a href="#">تابعنا على لينكدان</a></li>
+                        <li><a href="~/home/contact">اترك لنا رسالة</a></li>
+                    </ul>
+
+                </div>
+            </div>
+           
+        </div>
+        <div class="subfooter">
+            <span>جميع الحقوق محفوظة لدى شركة SoftChallengers </span>
+        </div>
+    </footer>
+
+    <script src="~/Scripts/jquery.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    @RenderSection("scripts",required:false)
+</body>
+</html>

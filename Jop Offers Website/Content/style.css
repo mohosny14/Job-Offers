@@ -1,0 +1,85 @@
+﻿@font-face{
+    font-family:myfont;
+    src:url('font/GE_SS_Two_Bold.woff')
+}
+@font-face{
+    font-family:myfont2;
+    src:url('font/DroidKufi-Regular.ttf')
+}
+body{
+    padding-top:70px;
+   font-family: myfont2;
+}
+.navbar-default {
+    background-color: #155a81;
+    border-color: #8a4747;
+   
+}
+.navbar-default .navbar-nav>li>a {
+    color: #e7e7e7;
+    font-family:myfont;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    color: #fff;
+}
+.nav > li{
+    position:relative;
+    display:block;
+    height:75px;
+    padding-top:10px;
+}
+.myfooter{
+    background-color:cornflowerblue;
+    padding-top:10px;
+    font-family:myfont;
+    text-align:justify;
+   
+}
+.subfooter{
+    background-color: #5187a5;
+    color:white;
+    padding:10px;
+    text-align:center;
+}
+.myfooter a{
+    color:azure;
+}
+.myfooter p{
+    color:azure;
+}
+.myfooter h3,ul,p{
+    margin-bottom:20px;
+    font-family:myfont2;
+}
+.logo-size{
+    width:120px;
+    height:62px;
+    margin-top:-7px;
+}
+#searchName {
+    width: 130px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    background-image: url('../Images/search-icon.jpg');
+    background-repeat:no-repeat;
+    background-position: 10px 10px;
+    padding: 12px 20px 12px 12px;
+    transition: width 0.4s ease-in-out;
+}
+#searchName:focus{
+    width:100%;
+}
+.img-size{
+    font-size:90px;
+}
+.navbar-user{
+     padding:10px;
+     padding-bottom:0px;
+     width:350px;
+}
+@media (min-width: 1326px){
+.col-md-3{
+        width: 23%;
+    }
+}

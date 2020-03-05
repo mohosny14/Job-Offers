@@ -1,0 +1,41 @@
+﻿@model Jop_Offers_Website.Models.Category
+
+@{
+    ViewBag.Title = "الحذف";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<h2>الحذف</h2>
+
+<h3>هل انت متأكد من حذف هذا النوع ؟</h3>
+<div>
+    <h4>تفاصيل النوع</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CategoryName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CategoryName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CatehoryDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CatehoryDescription)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="تأكيد الحذف" class="btn btn-danger" /> |
+            @Html.ActionLink("العودة الى القائمه", "Index")
+        </div>
+    }
+</div>

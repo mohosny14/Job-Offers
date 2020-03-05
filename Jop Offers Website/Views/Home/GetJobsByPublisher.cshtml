@@ -1,0 +1,32 @@
+﻿@model IEnumerable<Jop_Offers_Website.Models.JobsViewModel>
+   
+@foreach (var gr in Model)
+    {
+        //برسم الجدول وتتحط فيه البيانات
+
+      <h3>@gr.JobTitle</h3>  
+        <table class="table table-bordered hover">
+          <tr>
+              <th>اسم الباحث</th>
+              <th>نص الرسالة</th>
+              <th>تاريح الارسال</th>
+          </tr>
+            @foreach (var item in gr.items)
+            {
+                <tr>
+                    <td>
+                        @item.user.UserName
+                    </td>
+                    <td>
+                        @item.Message
+                    </td>
+                    <td>
+                        @item.ApplyDate
+                    </td>
+                </tr>
+
+            }
+        </table>
+
+    }
+
