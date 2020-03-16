@@ -3,32 +3,48 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron alert alert-info">
-    <h3>مرحبا بك</h3>
-    <p>يمكنك البحث عن الوظيفة الى تريدها من خلال جميع الاصناف. يمكنك نشر وظيفة وانتظار المتقدمين اليها ان كنت صاحب شركة او مؤسسه</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">المزيد من التفاصيل &raquo;</a></p>
-</div>
 <!-- #region for Display Categories and its jobs -->
 @*هعرض اصناف الوظائف وبداخل كل صنف الوظائف بتاعته*@
-@foreach (var item in Model)
-{
-    <div class="panel panel-info">
-        <div class="panel-heading"><h1>@Html.DisplayFor(modelItem => item.CategoryName)</h1></div>
-        <div class="row panel-body">
-            <h5>@Html.DisplayFor(modelItem => item.CatehoryDescription)</h5>
 
-            @foreach (var subItem in item.jobs)
-            {
-                // هعرض الوظائف بتاعت كل نوع
-                <div class="col-md-3 thumbnail" style="margin-left:20px; margin-bottom:30px; min-height:380px;">
-                    <img src="~/Uploads/@subItem.jobImage" />
-                    <h3>@Html.DisplayFor(modelItem => subItem.JobName)</h3>
-                    <h5>@Html.Raw(HttpUtility.HtmlDecode(Html.DisplayFor(modelItem => subItem.JobContent).ToString()))</h5>
-                    @Html.ActionLink("التفاصيل", "Details", new { jobId = subItem.Id }, new { @class = "btn btn-primary" })
+
+<!-- #region Job section strat -->
+<div class="job-section content-area">
+    <div class="container">
+        @foreach (var item in Model)
+        {
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="main-title-2">
+                        <h1>@Html.DisplayFor(modelItem => item.CategoryName)</h1>
+                        <a href="#" class="float-right baj">تصفح كل الوظائف</a>
+                        <h5>@Html.DisplayFor(modelItem => item.CatehoryDescription)</h5>
+                    </div>
                 </div>
-            }
-        </div>
+            </div>
+            <!-- job box 2 start -->
 
+            <div class="row Myrow">
+                @foreach (var subItem in item.jobs)
+                {
+                    <div class="col-3 col-md-3 col-sm-3">
+                        <div class="job-item-2">
+                            <a class="icon" href="#">
+                                <div class="company-logo">
+                                    <img src="~/Uploads/@subItem.jobImage" alt="logo">
+                                </div>
+                            </a>
+                            <h4><a href="@Url.Action("Details", "Home", new { jobId = subItem.Id })">@Html.DisplayFor(modelItem => subItem.JobName)</a></h4>
+                            <div class="job-ad-item">
+                                <ul>
+                                    <li>@Html.Raw(HttpUtility.HtmlDecode(Html.DisplayFor(modelItem => subItem.JobContent).ToString()))</li>
+                                </ul>
+                            </div>
+                            @Html.ActionLink("التفاصيل", "Details", new { jobId = subItem.Id }, new { @class = "apply-button" })
+                        </div>
+                    </div>
+                }
+            </div>
+        }
     </div>
-}
-<!-- #endregion -->
+</div>
+<!-- #endregion Job section strat -->

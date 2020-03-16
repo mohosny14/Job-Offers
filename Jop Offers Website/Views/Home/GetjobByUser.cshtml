@@ -2,45 +2,53 @@
 
 @{
     ViewBag.Title = "GetjobByUser";
-    Layout = "~/Views/Shared/_MainLayout.cshtml";
+    ViewBag.SubBannerTitle = "الوظائف التى تقدمت اليها";
+    ViewBag.SubBannerUrl = "Jobs You Applied To";
+    Layout = "~/Views/Shared/_SubLayout-1.cshtml";
 }
+<div class="update-profile-form container" style="width: 100%;">
+    <div class="row" style="direction: rtl;">
+        <div class="dashboard-list col">
+            <h3 class="heading">جميع الوظائف التى تقدمت اليها</h3>
+            <div class="dashboard-message contact-1">
+                <table class="table">
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.objJob.JobName)
+                        </th>
 
-<h2>جميع الوظائف التى تقدمت اليها</h2>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Message)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.ApplyDate)
+                        </th>
+                        <th></th>
+                    </tr>
 
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.objJob.JobName)
+                            </td>
 
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.objJob.JobName)
-        </th>
-       
-        <th>
-            @Html.DisplayNameFor(model => model.Message)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ApplyDate)
-        </th>
-        <th></th>
-    </tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Message)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.ApplyDate)
+                            </td>
+                            <td>
+                                @Html.ActionLink("تعديل", "Edit", new { id = item.Id }) |
+                                @Html.ActionLink("تفاصيل", "DetailsOfJob", new { id = item.Id }) |
+                                @Html.ActionLink("حذف", "Delete", new { id = item.Id })
+                            </td>
+                        </tr>
+                    }
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.objJob.JobName)
-        </td>
-       
-        <td>
-            @Html.DisplayFor(modelItem => item.Message)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ApplyDate)
-        </td>
-        <td>
-            @Html.ActionLink("تعديل", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("تفاصيل", "DetailsOfJob", new { id=item.Id }) |
-            @Html.ActionLink("حذف", "Delete", new { id=item.Id })
-        </td>
-    </tr>
-}
-
-</table>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

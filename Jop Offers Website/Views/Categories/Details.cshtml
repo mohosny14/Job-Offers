@@ -2,34 +2,31 @@
 
 @{
     ViewBag.Title = "التفاصيل";
-    Layout = "~/Views/Shared/_MainLayout.cshtml";
+    ViewBag.SubBannerTitle = "التفاصيل";
+    ViewBag.SubBannerUrl = "Details";
+    Layout = "~/Views/Shared/_SubLayout-1.cshtml";
 }
 
-<h2>التفاصيل</h2>
-
-<div>
-    <h4>انواع الوظائف</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.CategoryName)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.CategoryName)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.CatehoryDescription)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.CatehoryDescription)
-        </dd>
-
-    </dl>
+<div class="update-profile-form container" style="width: 45.3333%;">
+    <div class="row">
+        <div class="dashboard-list col">
+            <h3 class="heading">التفاصيل</h3>
+            <div class="dashboard-message contact-1">
+                <div>
+                    <div class="row" style="flex-direction: row-reverse; margin: 10px 0;">
+                        <div class="col">@Html.DisplayNameFor(model => model.CategoryName)</div>
+                        <div class="col">@Html.DisplayFor(model => model.CategoryName)</div>
+                    </div>
+                    <div class="row" style="flex-direction: row-reverse; margin: 10px 0;">
+                        <div class="col">@Html.DisplayNameFor(model => model.CatehoryDescription)</div>
+                        <div class="col">@Html.DisplayFor(model => model.CatehoryDescription)</div>
+                    </div>
+                </div>
+                <p>
+                    @Html.ActionLink("تعديل", "Edit", new { id = Model.Id }) |
+                    @Html.ActionLink("العودة الى القائمه", "Index")
+                </p>
+            </div>
+        </div>
+    </div>
 </div>
-<p>
-    @Html.ActionLink("تعديل", "Edit", new { id = Model.Id }) |
-    @Html.ActionLink("العودة الى القائمه", "Index")
-</p>

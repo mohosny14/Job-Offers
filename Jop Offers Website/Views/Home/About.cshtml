@@ -1,10 +1,36 @@
 ﻿@{
     ViewBag.Title = "About";
+    Layout = "~/Views/Shared/_SubLayout-1.cshtml";
+    ViewBag.SubBannerTitle = "عن شركتنا";
+    ViewBag.SubBannerUrl = "About Us";
 }
-<h1>مالك الموقع : </h1>
 
-<h2>شركة SoftChallengers</h2>
-<p>
-    <b>شركة متخصصة فى تصميم وتطوير المواقع الالكترونية والتطبيقات ودعمها بخدمات تسويق إحترافية.</b>
-</p>
-<p><b>الإتصال على : 01148645973 </b></p>
+
+<div class="about-us content-area-5 bg-grea">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-xs-12">
+                <div class="about-slider-box simple-slider">
+                    <img class="d-block w-100" src="~/Images/img-4.jpg" alt="about">
+                </div>
+            </div>
+            <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-xs-12 align-self-center">
+                <div class="about-text align-self-center">
+                    <h3>مالك الموقع : <span>SoftChallengers</span></h3>
+                    <p><b>شركة متخصصة فى تصميم وتطوير المواقع الالكترونية والتطبيقات ودعمها بخدمات تسويق إحترافية.</b></p>
+                    <p><b>للتواصل اتصل على : 01148645973 </b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- #region Old Code-->
+@*<h1>مالك الموقع : </h1>
+
+    <h2>شركة SoftChallengers</h2>
+    <p>
+        <b>شركة متخصصة فى تصميم وتطوير المواقع الالكترونية والتطبيقات ودعمها بخدمات تسويق إحترافية.</b>
+    </p>
+    <p><b>الإتصال على : 01148645973 </b></p>*@
+<!-- #endregion Old Code-->

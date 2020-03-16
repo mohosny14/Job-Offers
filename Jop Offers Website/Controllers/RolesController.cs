@@ -19,7 +19,6 @@ namespace Jop_Offers_Website.Controllers
         public ActionResult Index()
         {
             var list = db.Roles.ToList();
-           
             return View(list);
         }
 
@@ -49,7 +48,7 @@ namespace Jop_Offers_Website.Controllers
         [HttpPost]
         public ActionResult Create(IdentityRole role)
         {
-            
+
                 if (ModelState.IsValid)
                 {
                     db.Roles.Add(role);
@@ -58,7 +57,7 @@ namespace Jop_Offers_Website.Controllers
                 }
 
                 return View(role);
-            
+
         }
 
         // GET: Roles/Edit/5
@@ -120,7 +119,7 @@ namespace Jop_Offers_Website.Controllers
                 return RedirectToAction("Index");
             }
             return View(role);
-            
+
         }
     }
 }

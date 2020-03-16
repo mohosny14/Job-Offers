@@ -1,26 +1,38 @@
 ﻿@model Microsoft.AspNet.Identity.EntityFramework.IdentityRole
 
-<h3>هل متأكد من حذف هذه ؟</h3>
-<div>
-    <h4>RoleViewModel</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
+@{
+    ViewBag.Title = "Delete";
+    ViewBag.SubBannerTitle = "حذف النوع";
+    ViewBag.SubBannerUrl = "Delete Role";
+    Layout = "~/Views/Shared/_SubLayout-1.cshtml";
+}
 
-        <dd>
-            @Html.DisplayFor(model => model.Name)
-        </dd>
+<div class="update-profile-form container" style="width: 33.3333333%; font-family: myFont, Raleway-bold;">
+    <div class="row" style="direction: rtl;">
+        <div class="dashboard-list col">
+            <h3 class="heading">هل متأكد من حذف هذه ؟</h3>
+            <div class="dashboard-message contact-1">
+                <div class="form-group">
+                    <div class="form-group form-inline">
+                        <div class="col-md-2" style="padding-top: 0;">
+                            @Html.DisplayNameFor(model => model.Name)
+                        </div>
+                        <div class="col-md-10">
+                            @Html.DisplayFor(model => model.Name)
+                        </div>
+                    </div>
 
-    </dl>
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
 
-    @using (Html.BeginForm()) {
-        @Html.AntiForgeryToken()
-
-        <div class="form-actions no-color">
-            <input type="submit" value="Delete" class="btn btn-danger" /> |
-            @Html.ActionLink("Back to List", "Index")
+                        <div class="form-actions no-color">
+                            <input type="submit" value="Delete" class="btn btn-danger" /> |
+                            @Html.ActionLink("Back to List", "Index")
+                        </div>
+                    }
+                </div>
+            </div>
         </div>
-    }
+    </div>
 </div>

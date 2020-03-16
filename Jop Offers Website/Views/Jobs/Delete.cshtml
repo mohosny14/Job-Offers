@@ -2,61 +2,70 @@
 
 @{
     ViewBag.Title = "Delete";
-    Layout = "~/Views/Shared/_MainLayout.cshtml";
+    ViewBag.SubBannerTitle = "حذف الوظيفة";
+    ViewBag.SubBannerUrl = "Delete Job";
+    Layout = "~/Views/Shared/_SubLayout-1.cshtml";
 }
 
-<h2>حذف الوظيفة</h2>
+<div class="update-profile-form container" style="width: 45.3333%;">
+    <div class="row" style="direction: rtl;">
+        <div class="dashboard-list col">
+            <h3 class="heading">هل أنت متأكد من حذف هذه الوظيفة ؟</h3>
+            <div class="dashboard-message contact-1">
+                <div>
+                    <h5>تفاصيل الوظيفة</h5>
+                    <hr />
+                    <div class="form-horizontal">
+                        <div class="form-group form-inline">
+                            <div class="col-md-3">
+                                @Html.DisplayNameFor(model => model.category.CategoryName)
+                            </div>
+                            <div class="col-md-9">
+                                @Html.DisplayFor(model => model.category.CategoryName)
+                            </div>
+                        </div>
+                        <div class="form-group form-inline">
+                            <div class="col-md-3">
+                                @Html.DisplayNameFor(model => model.JobName)
+                            </div>
+                            <div class="col-md-9">
+                                @Html.DisplayFor(model => model.JobName)
+                            </div>
+                        </div>
+                        <div class="form-group form-inline">
+                            <div class="col-md-3">
+                                @Html.DisplayNameFor(model => model.JobContent)
+                            </div>
+                            <div class="col-md-9">
+                                @Html.Raw(HttpUtility.HtmlDecode(Html.DisplayFor(model => model.JobContent).ToString()))
+                            </div>
+                        </div>
+                        <div class="form-group form-inline">
+                            <div class="col-md-3">
+                                @Html.DisplayNameFor(model => model.jobImage)
+                            </div>
+                            <div class="col-md-9">
+                                <img src="~/Uploads/@Html.DisplayFor(model => model.jobImage)"
+                                     class="thumbnail"
+                                     style="width:100%; max-height:370px;" />
+                            </div>
+                        </div>
 
-<h3>هل أنت متأكد من حذف هذه ؟</h3>
-<div>
-   
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.category.CategoryName)
-        </dt>
+                    </div>
+                </div>
 
-        <dd>
-            @Html.DisplayFor(model => model.category.CategoryName)
-        </dd>
+                <div>
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
 
-        <dt>
-            @Html.DisplayNameFor(model => model.JobName)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.JobName)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.JobContent)
-        </dt>
-
-        <dd>
-            @Html.Raw(HttpUtility.HtmlDecode(Html.DisplayFor(model => model.JobContent).ToString()))
-
-
-            @*@Html.DisplayFor(model => model.JobContent)*@
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.jobImage)
-        </dt>
-
-        <dd>
-            <img src="~/Uploads/@Html.DisplayFor(model => model.jobImage)"
-                 class="thumbnail"
-                 style="width:48px; height:48px;" />
-        </dd>
-
-    </dl>
-
-    @using (Html.BeginForm()) {
-        @Html.AntiForgeryToken()
-
-        <div class="form-actions no-color">
-            <input type="submit" value="تأكيد الحذف" class="btn btn-danger" /> |
-            @Html.ActionLink("العودة الى الوظائف", "Index")
+                        <div class="form-actions no-color" style="text-align:center; margin-top:30px;">
+                            <input type="submit" value="تأكيد الحذف" class="btn btn-danger" />
+                            <div style="margin-top: 10px;">@Html.ActionLink("العودة الى الوظائف", "Index")</div>
+                        </div>
+                    }
+                </div>
+            </div>
         </div>
-    }
+    </div>
 </div>

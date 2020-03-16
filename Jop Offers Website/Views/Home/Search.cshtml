@@ -2,26 +2,54 @@
 
 @{
     ViewBag.Title = "Search";
-    Layout = "~/Views/Shared/_MainLayout.cshtml";
+    ViewBag.SubBannerTitle = "نتائج البحث";
+    ViewBag.SubBannerUrl = "Search Resualt";
+    Layout = "~/Views/Shared/_SearchLayout.cshtml";
 }
 
 @*هعرض الوظائف التى تم البحث عنها*@
 
+<div class="update-profile-form container" style="width: 100%;">
+    <div class="row">
+        <div class="dashboard-list col">
+            <h3 class="heading">نتائج البحث</h3>
+            <div class="dashboard-message contact-1">
+                <div class="panel panel-info">
+                    <div class="row panel-body row" style="direction: rtl;">
 
-    <div class="panel panel-info">
-        <h1 class="panel-heading">نتائج البحث</h1>
-        <div class="row panel-body">
+                        @foreach (var subItem in Model)
+                        {
+                            // هعرض الوظائف بتاعت كل نوع
+                            @*<div class="col-md-3 thumbnail" style="margin-left:20px; margin-bottom:30px; min-height:380px;">
+                                <img src="~/Uploads/@subItem.jobImage" />
+                                <h3>@Html.DisplayFor(modelItem => subItem.JobName)</h3>
+                                <h5>@Html.Raw(HttpUtility.HtmlDecode(Html.DisplayFor(modelItem => subItem.JobContent).ToString()))</h5>
+                                @Html.ActionLink("التفاصيل", "Details", new { jobId = subItem.Id }, new { @class = "btn btn-primary" })
+                            </div>*@
 
-            @foreach (var subItem in Model)
-            {
-                // هعرض الوظائف بتاعت كل نوع
-                <div class="col-md-3 thumbnail" style="margin-left:20px; margin-bottom:30px; min-height:380px;">
-                    <img src="~/Uploads/@subItem.jobImage" />
-                    <h3>@Html.DisplayFor(modelItem => subItem.JobName)</h3>
-                    <h5>@Html.Raw(HttpUtility.HtmlDecode(Html.DisplayFor(modelItem => subItem.JobContent).ToString()))</h5>
-                    @Html.ActionLink("التفاصيل", "Details", new { jobId = subItem.Id }, new { @class = "btn btn-primary" })
+                            <div class="col-3 col-md-3 col-sm-3">
+                                <div class="job-item-2">
+                                    <a class="icon" href="#">
+                                        <div class="company-logo">
+                                            <img src="~/Uploads/@subItem.jobImage" alt="logo">
+                                        </div>
+                                    </a>
+                                    <h4><a href="@Url.Action("Details", "Home", new { jobId = subItem.Id })">@Html.DisplayFor(modelItem => subItem.JobName)</a></h4>
+                                    <div class="job-ad-item">
+                                        <ul>
+                                            <li>@Html.Raw(HttpUtility.HtmlDecode(Html.DisplayFor(modelItem => subItem.JobContent).ToString()))</li>
+                                        </ul>
+                                    </div>
+                                    @Html.ActionLink("التفاصيل", "Details", new { jobId = subItem.Id }, new { @class = "apply-button" })
+                                </div>
+                            </div>
+                        }
+
+
+                    </div>
+
                 </div>
-            }
+            </div>
         </div>
-
     </div>
+</div>

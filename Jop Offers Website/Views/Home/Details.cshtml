@@ -2,52 +2,73 @@
 
 @{
     ViewBag.Title = "Details";
-    Layout = "~/Views/Shared/_MainLayout.cshtml";
+    ViewBag.SubBannerTitle = "تفاصيل الوظيفة";
+    ViewBag.SubBannerUrl = "Job Details";
+    Layout = "~/Views/Shared/_SubLayout-1.cshtml";
 }
 
-<h2>تفاصيل الوظيفة</h2>
-
-<div>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.category.CategoryName)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.category.CategoryName)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.JobName)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.JobName)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.JobContent)
-        </dt>
-
-        <dd>
-            @Html.Raw(HttpUtility.HtmlDecode(Html.DisplayFor(model => model.JobContent).ToString()))
-
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.jobImage)
-        </dt>
-
-        <dd>
-            <img src="~/Uploads/@Html.DisplayFor(model => model.jobImage)"
-                 class="thumbnail"
-                 style="width:128px; height:128px;" />
-        </dd>
-
-    </dl>
+<div class="update-profile-form container" style="width: 100%;">
+    <div class="row">
+        <div class="dashboard-list col">
+            <h3 class="heading">تفاصيل الوظيفة</h3>
+            <div class="dashboard-message contact-1">
+                <div class="row" style="direction: rtl;">
+                    <div class="col">
+                        <div class="col-lg-12">
+                            <div class="form-group form-inline">
+                                <div class="col-md-4">
+                                    @Html.DisplayNameFor(model => model.category.CategoryName)
+                                </div>
+                                <div class="col-md-8">
+                                    <p style="font-weight: 500;">@Html.DisplayFor(model => model.category.CategoryName)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="form-group form-inline">
+                                <div class="col-md-4">
+                                    @Html.DisplayNameFor(model => model.JobName)
+                                </div>
+                                <div class="col-md-8">
+                                    @Html.DisplayFor(model => model.JobName)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="form-group form-inline">
+                                <div class="col-md-4">
+                                    @Html.DisplayNameFor(model => model.JobContent)
+                                </div>
+                                <div class="col-md-8">
+                                    @Html.Raw(HttpUtility.HtmlDecode(Html.DisplayFor(model => model.JobContent, new { @id = "JobDetails-p" }).ToString()))
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="col-lg-12">
+                            <div class="form-group form-inline">
+                                <div class="col-md-4">
+                                    @Html.DisplayNameFor(model => model.jobImage)
+                                </div>
+                                <div class="col-md-8">
+                                    <img src="~/Uploads/@Html.DisplayFor(model => model.jobImage)"
+                                         class="thumbnail"
+                                         style="width:100%; height:100%" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 form-footer">
+                        <div class="send-btn">
+                            @Html.ActionLink("التقدم الى هذه الوظيفة", "Apply", new { id = Model.Id }, new { @class = "btn btn-md btn-success" })
+                        </div>
+                        <div class="back-to-home">
+                            <a href="~/Home/GetjobByUser">العودة الى القائمة مرة اخرى</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-<p>
-    @Html.ActionLink("التقدم الى هذه الوظيفة", "Apply", new { id = Model.Id }, new { @class = "btn btn-success" }) |
-    @Html.ActionLink("العوده الى الصفحة الرئيسية", "Index", new { @class = "btn btn-default" })
-</p>

@@ -3,7 +3,7 @@ namespace Jop_Offers_Website.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class test3 : DbMigration
+    public partial class newMigration : DbMigration
     {
         public override void Up()
         {

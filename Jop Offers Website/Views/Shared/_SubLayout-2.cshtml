@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/style.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        @RenderBody()
+    </div>
+
+    <script src="~/Scripts/jquery.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script>
+        $(window).scroll(function () {
+            if ($(this).scrollTop()) {
+                $('#page_scroller').fadeIn();
+            } else {
+                $('#page_scroller').fadeOut();
+            }
+        });
+
+    </script>
+    @RenderSection("scripts", required: false)
+
+    <a id="page_scroller" href="#" style="position: fixed; z-index: 2147483647;"><i class="fa fa-chevron-up"></i></a>
+    <script src="~/Scripts/A js.js"></script>
+</body>
+</html>

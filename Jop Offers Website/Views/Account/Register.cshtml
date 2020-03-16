@@ -1,8 +1,11 @@
 ﻿@model WebApplication1.Models.RegisterViewModel
 @{
     ViewBag.Title = "تسجيل الاشتراك";
+    Layout = "~/Views/Shared/_SubLayout-2.cshtml";
 }
 
+<!--#region Old Register-->
+<!--
 <h2>@ViewBag.Title</h2>
 
 @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
@@ -50,3 +53,63 @@
         </div>
     </div>
 }
+-->
+<!--#endregion Old Register-->
+
+<div class="contact-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- Form content box start -->
+                <div class="form-content-box">
+                    <!-- details -->
+                    <div class="details">
+                        <!-- Logo-->
+                        <a class="logo" href="/Home">
+                            Wazifa
+                            @*<img src="img/black-logo.png" class="cm-logo" alt="black-logo">*@
+                        </a>
+                        <!-- Name -->
+                        <h3>Create an account</h3>
+                        <!-- Form start-->
+                        @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                        {
+                            @Html.AntiForgeryToken()
+
+                            @Html.ValidationSummary("", new { @class = "text-danger" })
+
+                            <div class="form-group">
+                                @Html.TextBoxFor(m => m.UserName, new { placeholder = "User Name", @class = "input-text" })
+                            </div>
+
+                            <div class="form-group">
+                                @Html.DropDownList("UserType", null, "-Select User Type-", new { @class = "input-text" })
+                            </div>
+
+                            <div class="form-group">
+                                @Html.TextBoxFor(m => m.Email, new { placeholder = "Email", @class = "input-text" })
+                            </div>
+
+                            <div class="form-group">
+                                @Html.PasswordFor(m => m.Password, new { placeholder = "Password", @class = "input-text" })
+                            </div>
+
+                            <div class="form-group">
+                                @Html.PasswordFor(m => m.ConfirmPassword, new { placeholder = "Confirm Password", @class = "input-text" })
+                            </div>
+
+                            <div class="form-group mb-0">
+                                <input type="submit" class="btn-md button-theme btn-block" value="Signup" />
+                            </div>
+                        }
+                    </div>
+                    <!-- Footer -->
+                    <div class="footer">
+                        <span>Already a member? @Html.ActionLink("Login here", "Login")</span>
+                    </div>
+                </div>
+                <!-- Form content box end -->
+            </div>
+        </div>
+    </div>
+</div>

@@ -2,40 +2,52 @@
 
 @{
     ViewBag.Title = "الحذف";
-    Layout = "~/Views/Shared/_MainLayout.cshtml";
+    ViewBag.SubBannerTitle = "حذف";
+    ViewBag.SubBannerUrl = "Delete";
+    Layout = "~/Views/Shared/_SubLayout-1.cshtml";
 }
 
-<h2>الحذف</h2>
+<div class="update-profile-form container" style="width: 45.3333%;">
+    <div class="row" style="direction: rtl;">
+        <div class="dashboard-list col">
+            <h3 class="heading">هل انت متأكد من حذف هذا النوع ؟</h3>
+            <div class="dashboard-message contact-1">
+                <div>
+                    <h5>تفاصيل النوع</h5>
+                    <hr />
+                    <div class="form-horizontal">
+                        <div class="form-group form-inline">
+                            @Html.LabelFor(model => model.CategoryName, htmlAttributes: new { @class = "control-label col-md-3" })
+                            <div class="col-md-9">
+                                @Html.DisplayFor(model => model.CategoryName)
+                            </div>
+                        </div>
+                        <div class="form-group form-inline">
+                            @Html.LabelFor(model => model.CatehoryDescription, htmlAttributes: new { @class = "control-label col-md-3" })
+                            <div class="col-md-9">
+                                @Html.DisplayFor(model => model.CatehoryDescription)
+                            </div>
+                        </div>
+                    </div>
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
 
-<h3>هل انت متأكد من حذف هذا النوع ؟</h3>
-<div>
-    <h4>تفاصيل النوع</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.CategoryName)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.CategoryName)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.CatehoryDescription)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.CatehoryDescription)
-        </dd>
-
-    </dl>
-
-    @using (Html.BeginForm()) {
-        @Html.AntiForgeryToken()
-
-        <div class="form-actions no-color">
-            <input type="submit" value="تأكيد الحذف" class="btn btn-danger" /> |
-            @Html.ActionLink("العودة الى القائمه", "Index")
+                        @*<div class="form-actions no-color">
+                            <input type="submit" value="تأكيد الحذف" class="btn btn-danger" /> |
+                            @Html.ActionLink("العودة الى القائمه", "Index")
+                        </div>*@
+                        <div class="col-lg-12 form-footer">
+                            <div class="send-btn">
+                                <button type="submit" class="btn btn-md btn-danger">تأكيد الحذف</button>
+                            </div>
+                            <div class="back-to-home">
+                                <a href="~/Index">العوده الى القائمه مره أخرى</a>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
         </div>
-    }
+    </div>
 </div>

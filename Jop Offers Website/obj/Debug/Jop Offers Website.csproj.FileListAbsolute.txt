@@ -215,3 +215,69 @@ D:\Job Offers\Jop Offers Website\Jop Offers Website\obj\Debug\Jop Offers Website
 D:\Job Offers\Jop Offers Website\Jop Offers Website\obj\Debug\Jop Offers Website.csprojResolveAssemblyReference.cache
 D:\Job Offers\Jop Offers Website\Jop Offers Website\obj\Debug\Jop_Offers_Website.Migrations.test3.resources
 D:\Job Offers\Jop Offers Website\Jop Offers Website\obj\Debug\Jop Offers Website.csproj.GenerateResource.Cache
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\roslyn\csc.exe
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\roslyn\System.Collections.Immutable.dll
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\roslyn\System.Reflection.Metadata.dll
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\roslyn\vbc.exe
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\roslyn\VBCSCompiler.exe
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\roslyn\VBCSCompiler.exe.config
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\Jop Offers Website.dll.config
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\Jop Offers Website.dll
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\Jop Offers Website.pdb
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\Antlr3.Runtime.dll
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\EntityFramework.dll
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\EntityFramework.SqlServer.dll
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\Microsoft.AspNet.Identity.Core.dll
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\Microsoft.Owin.dll
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\Microsoft.Owin.Security.Cookies.dll
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\Microsoft.Owin.Security.dll
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\Microsoft.Owin.Security.Google.dll
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\Microsoft.Owin.Security.OAuth.dll
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\Microsoft.Web.Infrastructure.dll
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\Newtonsoft.Json.dll
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\Owin.dll
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\System.Web.Helpers.dll
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\System.Web.Mvc.dll
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\System.Web.Optimization.dll
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\System.Web.Razor.dll
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\System.Web.Webpages.Deployment.dll
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\System.Web.Webpages.dll
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\System.Web.Webpages.Razor.dll
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\WebGrease.dll
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\Antlr3.Runtime.pdb
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\EntityFramework.xml
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\EntityFramework.SqlServer.xml
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\Microsoft.AspNet.Identity.Core.xml
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\Microsoft.Owin.xml
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\Microsoft.Owin.Security.xml
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\Microsoft.Owin.Security.Cookies.xml
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\Microsoft.Owin.Security.Google.xml
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\Microsoft.Owin.Security.OAuth.xml
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\Newtonsoft.Json.xml
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\System.Web.Optimization.xml
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\System.Web.Razor.xml
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\System.Web.Webpages.xml
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\System.Web.Webpages.Deployment.xml
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\System.Web.Webpages.Razor.xml
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\System.Web.Helpers.xml
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\bin\System.Web.Mvc.xml
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\obj\Debug\Jop Offers Website.csproj.CopyComplete
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\obj\Debug\Jop Offers Website.dll
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\obj\Debug\Jop Offers Website.pdb
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\obj\Debug\Jop_Offers_Website.Migrations.newMigration.resources
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\obj\Debug\Jop Offers Website.csproj.GenerateResource.cache
+E:\C Projects\My-Github\Job-Offers\Jop Offers Website\obj\Debug\Jop Offers Website.csprojAssemblyReference.cache

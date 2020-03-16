@@ -2,56 +2,46 @@
 
 @{
     ViewBag.Title = "Index";
-    Layout = "~/Views/Shared/_MainLayout.cshtml";
+    ViewBag.SubBannerTitle = "قائمة الوظائف";
+    ViewBag.SubBannerUrl = "Jobs list";
+    Layout = "~/Views/Shared/_SubLayout-1.cshtml";
 }
 
-<h2>قائمة الوظائف</h2>
+<div class="update-profile-form container" style="width: 100%;">
+    <div class="row" style="direction: rtl;">
+        <div class="dashboard-list col">
+            <h3 class="heading">قائمة الوظائف</h3>
+            <div class="dashboard-message contact-1">
+                <p>
+                    @Html.ActionLink("اضافة وظيفة جديده", "Create")
+                </p>
+                <div class="row">
+                    <div class="col-lg-12 Mytable">
+                        <div class="form-group form-inline Mytable-Header">
+                            <div class="col-md-2"><p>نوع الوظيفه</p></div>
+                            <div class="col-md-2"><p>اسم الوظيفه</p></div>
+                            <div class="col-md-3"><p>وصف الوظيفه</p></div>
+                            <div class="col-md-2"><p>صورة الوظيفه</p>	</div>
+                            <div class="col-md-3"></div>
+                        </div>
+                        @foreach (var item in Model)
+                        {
+                            <div class="form-group form-inline Mytable-Footer">
+                                <div class="col-md-2"><p>@Html.DisplayFor(modelItem => item.category.CategoryName)</p></div>
+                                <div class="col-md-2"><p>@Html.DisplayFor(modelItem => item.JobName)</p></div>
+                                <div class="col-md-3">@Html.Raw(HttpUtility.HtmlDecode(Html.DisplayFor(modelItem => item.JobContent).ToString()))</div>
+                                <div class="col-md-2"><img src="~/Uploads/@Html.DisplayFor(modelItem => item.jobImage)" class="thumbnail" style="width:100%; height:200px;" />	</div>
+                                <div class="col-md-3">
+                                    @Html.ActionLink("تعديل", "Edit", new { id = item.Id }) |
+                                    @Html.ActionLink("تفاصيل", "Details", new { id = item.Id }) |
+                                    @Html.ActionLink("حذف", "Delete", new { id = item.Id })
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
 
-<p>
-    @Html.ActionLink("اضافة وظيفة جديده", "Create")
-</p>
-<table class="table table-stripped table-bordered table-hover">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.category.CategoryName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.JobName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.JobContent)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.jobImage)
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.category.CategoryName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.JobName)
-        </td>
-        <td>
-            @Html.Raw(HttpUtility.HtmlDecode(Html.DisplayFor(modelItem => item.JobContent).ToString()))
-
-
-            @*@Html.DisplayFor(modelItem => item.JobContent)*@
-        </td>
-        <td>
-           <img src="~/Uploads/@Html.DisplayFor(modelItem => item.jobImage)"
-                class="thumbnail"  
-                style="width:48px; height:48px;" />
-        </td>
-        <td>
-            @Html.ActionLink("تعديل", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("تفاصيل", "Details", new { id=item.Id }) |
-            @Html.ActionLink("حذف", "Delete", new { id=item.Id })
-        </td>
-    </tr>
-}
-
-</table>
+            </div>
+        </div>
+    </div>
+</div>

@@ -19,11 +19,11 @@ namespace WebApplication1.Controllers
         // the index action:  represent the home page
         public ActionResult Index()
         {
-            
+
            // var list = db.Categories.ToList();
             return View(db.Categories.ToList());
         }
-        
+
         public ActionResult Details(int jobId)
         {
             var job = db.Jobs.Find(jobId);
@@ -71,7 +71,7 @@ namespace WebApplication1.Controllers
             {
                 ViewBag.result = "خطأ! لقد تقدمت لنفس الوظيفة من قبل";
             }
-          
+
 
             return View();
         }
@@ -106,7 +106,7 @@ namespace WebApplication1.Controllers
             var jobs = from app in db.ApplyForJobs
                        join Job in db.Jobs // join 2 tables
                        on app.JobId equals Job.Id
-                       where UserID == Job.user.Id 
+                       where UserID == Job.user.Id
                        select app;
             #region groubing_in_Linq //___> الاسم
             // groubing in linq
@@ -125,7 +125,7 @@ namespace WebApplication1.Controllers
 
         public ActionResult Edit(int id)
         {
-           
+
             var job = db.ApplyForJobs.Find(id); // else
             if (job == null)
             {
@@ -151,7 +151,7 @@ namespace WebApplication1.Controllers
 
         public ActionResult Delete(int id)
         {
-            
+
             var job = db.ApplyForJobs.Find(id); // else
             if (job == null)
             {
@@ -187,7 +187,7 @@ namespace WebApplication1.Controllers
         [HttpGet]
         public ActionResult Contact()
         {
-           
+
 
             return View();
         }
@@ -203,7 +203,7 @@ namespace WebApplication1.Controllers
             mail.To.Add(new MailAddress("mohosny14@gmail.com")); // الرسالة رايحه لمين ويمكن اضيف اكتر من ايميل تتبعتله
             mail.Subject = contact.Subject; // باقى تفاصيل الايميل
 
-            mail.IsBodyHtml = true; // html علشان يكون الايميل ع شكل 
+            mail.IsBodyHtml = true; // html علشان يكون الايميل ع شكل
             string body = "اسم المرسل : " + contact.name + "<br>" +
                             "بريد المرسل : " + contact.E_mail + "<br>" +
                             "عنوان الرسالة : " + contact.Subject + "<br>" +
@@ -213,15 +213,15 @@ namespace WebApplication1.Controllers
 
             // البرتوكول الخاص برسايل الميل
             var smtpClient = new SmtpClient("smtp.gmail.com", 587); // 587 this is Gmail Port
-         
 
-            smtpClient.EnableSsl = true; // يسمح بالوضع الامن gmail ال 
+
+            smtpClient.EnableSsl = true; // يسمح بالوضع الامن gmail ال
 
             //smtpClient.UseDefaultCredentials = false;
 
             smtpClient.Credentials = loginInfo;
             smtpClient.Send(mail);
-          
+
             return RedirectToAction("Index");
         }
 

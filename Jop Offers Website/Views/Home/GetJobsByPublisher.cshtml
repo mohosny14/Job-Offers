@@ -1,32 +1,52 @@
 ﻿@model IEnumerable<Jop_Offers_Website.Models.JobsViewModel>
-   
-@foreach (var gr in Model)
-    {
-        //برسم الجدول وتتحط فيه البيانات
 
-      <h3>@gr.JobTitle</h3>  
-        <table class="table table-bordered hover">
-          <tr>
-              <th>اسم الباحث</th>
-              <th>نص الرسالة</th>
-              <th>تاريح الارسال</th>
-          </tr>
-            @foreach (var item in gr.items)
-            {
-                <tr>
-                    <td>
-                        @item.user.UserName
-                    </td>
-                    <td>
-                        @item.Message
-                    </td>
-                    <td>
-                        @item.ApplyDate
-                    </td>
-                </tr>
+@{
+    ViewBag.Title = "Jobs";
+    ViewBag.SubBannerTitle = "الوظائف التى قمت بنشرها";
+    ViewBag.SubBannerUrl = "Jobs You Published";
+    Layout = "~/Views/Shared/_SubLayout-1.cshtml";
+}
 
-            }
-        </table>
 
-    }
+<div class="update-profile-form container" style="width: 100%;">
+    <div class="row" style="direction: rtl;">
+        <div class="dashboard-list col">
+            <h3 class="heading">المتقدمين للوظائف</h3>
+            <div class="dashboard-message contact-1">
 
+                @foreach (var gr in Model)
+                {
+                    //برسم الجدول وتتحط فيه البيانات
+                    <div class="row">
+                        <div class="col form-inline" style="margin: 15px 0;">
+                            <p style="margin: 0;padding: 0;margin-left: 10px;"> الوظيفة :</p>
+                            <p style="margin: 0;padding: 0;font-family: sans-serif;">@gr.JobTitle</p>
+                        </div>
+                    </div>
+                    <table class="table table-bordered hover">
+                        <tr>
+                            <th>اسم الباحث</th>
+                            <th>نص الرسالة</th>
+                            <th>تاريح الارسال</th>
+                        </tr>
+                        @foreach (var item in gr.items)
+                        {
+                            <tr>
+                                <td>
+                                    @item.user.UserName
+                                </td>
+                                <td>
+                                    @item.Message
+                                </td>
+                                <td>
+                                    @item.ApplyDate
+                                </td>
+                            </tr>
+                        }
+                    </table>
+                    <hr />
+                }
+            </div>
+        </div>
+    </div>
+</div>

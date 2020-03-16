@@ -6,132 +6,342 @@
     <title>@ViewBag.Title</title>
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
     <link href="~/Content/style.css" rel="stylesheet" />
+    @System.Web.Optimization.Styles.Render("~/Content/font-awesome")
+    <link href="~/Content/Flaticon/flaticon.css" rel="stylesheet" />
 </head>
 <body>
-        <!--Nav Bar-->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <!-- #region Main header start -->
+    <header class="main-header header-transparent sticky-header">
         <div class="container">
-            <div class="navbar-header">
-                <button class="navbar-toggle collapsed" data-toggle="collapse"
-                        data-target="#navbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand logo" href="~/Home">Wazifa@*<img src="~/Images/logo.png" alt="logo">*@</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fa fa-bars"></span>
                 </button>
-                <!-- لينك صورة اللوجو-->
-                <a href="~/Home" class="navbar-brand">
-                    <img src="~/Images/logo.png" class="logo-size"/>
-                </a>
-            </div>
-            <!--NavBarالمحتوى الخاص بال-->
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="~/Home">
-                            <!--السطر دا خاص بشكل الايقونه ال  هتكون جمب العنوان-->
-                            <i class="glyphicon glyphicon-home"></i>
-                            الرئيسيه
-                        </a>
-                    </li>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    @Html.Partial("_Login")
+                    <!-- #region Login / Register Deleted -->
+                    @*<ul class="navbar-nav ml-auto">
+                            <li class="nav-item ni-2">
+                                <a class="nav-link" href="login.html">
+                                    Login
+                                </a>
+                            </li>
+                            <li class="nav-item ni-2">
+                                <a class="nav-link deffold" href="#">
+                                    /
+                                </a>
+                            </li>
+                            <li class="nav-item ni-2">
+                                <a class="nav-link" href="signup.html">
+                                    Register
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link link-color"><span class="fa fa-plus"></span> Post a Jobs</a>
+                            </li>
+                        </ul>*@
+                    <!-- #endregion -->
 
-
-                    <li>
-                        <a href="~/Home/About">
-                            <!--السطر دا خاص بشكل الايقونه ال  هتكون جمب العنوان-->
-                            <i class="glyphicon glyphicon-info-sign"></i>
-                            عن الموقع
-                        </a>
-                    </li>
-                    <li>
-                        <a href="~/Home/Contact">
-                            <!--السطر دا خاص بشكل الايقونه ال  هتكون جمب العنوان-->
-                            <i class="glyphicon glyphicon-envelope"></i>
-                            اتصل بنا
-                        </a>
-                    </li>
-                    @*مربع البحث*@
-                    <li>
-                        @*create form using Razor 
-                        لما اختار السيرش يظهر الفورم*@
-                        @using (Html.BeginForm("Search", "home", FormMethod.Post))
-                        {
-                            <input type="text" name="searchName" id="searchName"
-                                   placeholder="ابحث هنا" />
-                        }
-                        
-
-                    </li>
-                </ul>
-
-                <!--Partial View Login-->
-                @Html.Partial("_Login")
-                <!--بين القوسين مسار الصفحة او اسمها لو هى فى نفس المجلد-->
-            </div>  
+                </div>
+            </nav>
         </div>
-    </nav>
+    </header>
+    <!-- #endregion Main header end -->
+    <!-- #region Banner start -->
+    <div class="banner" id="banner">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item item-bg active">
+                    <img class="d-block w-100 h-100" src="~/Images/banner-2.jpg" alt="banner">
+                    <div class="carousel-caption banner-slider-inner d-flex h-100">
+                        <div class="carousel-content container">
+                            <div class="banner-inner mt-60">
+                                <div class="text-center">
+                                    <h3 class="b-text">ابحث عن الوظيفة التي تناسب حياتك</h3>
+                                    <p class="p-text">
+                                        يمكنك البحث عن الوظيفة الى تريدها من خلال جميع الاصناف. يمكنك نشر وظيفة وانتظار المتقدمين اليها ان كنت صاحب شركة او مؤسسه
+                                    </p>
+                                    <div class="inline-search-area ml-auto mr-auto isa-3">
+                                        <div class="search-boxs">
+                                            @using (Html.BeginForm("Search", "home", FormMethod.Post))
+                                            {
+                                                <div class="search-col">
 
+                                                    <input type="text" name="searchName" id="searchNameAutoDir"
+                                                           style="text-align: center;
+                                                                  font-size: 20px;
+                                                                  font-weight: 800;
+                                                                  font-family: 'myfont2', Raleway-Medium;"
+                                                           class="form-control has-icon b-radius" placeholder="ابحث عن وظيفة">
+                                                    @*<input type="text" name="searchName" id="searchName" placeholder="ابحث هنا" />*@
+                                                </div>
+                                                <div class="find">
+                                                    <button class="btn button-theme btn-search btn-block b-radius" type="submit">
+                                                        <i class="fa fa-search"></i><strong> بحث</strong>
+                                                    </button>
+                                                </div>
+                                            }
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- #endregion Banner end -->
+    @* ---------------------------------------------- *@
+    <!-- #region Popular categories strat -->
+    <div class="popular-categories content-area-7 bg-grea">
+        <div class="container">
+            <!-- Main title -->
+            <div class="main-title text-center">
+                <h1>Popular Categories</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="media categorie-box-2">
+                        <a class="icon" href="#">
+                            <i class="flaticon-money"></i>
+                        </a>
+                        <div class="media-body align-self-center">
+                            <h5>Accounting / Finance</h5>
+                            <span>(2143)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="media categorie-box-2">
+                        <a class="icon" href="#">
+                            <i class="flaticon-cap"></i>
+                        </a>
+                        <div class="media-body align-self-center">
+                            <h5>Education Training</h5>
+                            <span>(2143)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="media categorie-box-2">
+                        <a class="icon" href="#">
+                            <i class="flaticon-promotion"></i>
+                        </a>
+                        <div class="media-body align-self-center">
+                            <h5>Digital Marketing</h5>
+                            <span>(2143)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="media categorie-box-2">
+                        <a class="icon" href="#">
+                            <i class="flaticon-telecommunications"></i>
+                        </a>
+                        <div class="media-body align-self-center">
+                            <h5>Telecommunication</h5>
+                            <span>(2143)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="media categorie-box-2">
+                        <a class="icon" href="#">
+                            <i class="flaticon-team"></i>
+                        </a>
+                        <div class="media-body align-self-center">
+                            <h5>Human Resource</h5>
+                            <span>(2143)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="media categorie-box-2">
+                        <a class="icon" href="#">
+                            <i class="flaticon-shopping"></i>
+                        </a>
+                        <div class="media-body align-self-center">
+                            <h5>Sales &amp; Marketing</h5>
+                            <span>(2143)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="media categorie-box-2">
+                        <a class="icon" href="#">
+                            <i class="flaticon-pencil"></i>
+                        </a>
+                        <div class="media-body align-self-center">
+                            <h5>Writing &amp; Translations</h5>
+                            <span>(2143)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="media categorie-box-2">
+                        <a class="icon" href="#">
+                            <i class="flaticon-doctor"></i>
+                        </a>
+                        <div class="media-body align-self-center">
+                            <h5>Health Care</h5>
+                            <span>(2143)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="media categorie-box-2">
+                        <a class="icon" href="#">
+                            <i class="flaticon-car"></i>
+                        </a>
+                        <div class="media-body align-self-center">
+                            <h5>Automotive Jobs</h5>
+                            <span>(2143)</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- #endregion Popular categories strat -->
+    @* ---------------------------------------------- *@
+    <!-- #region Counters strat -->
+    <div class="counters">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="counter-box">
+                        <i class="flaticon-avatar"></i>
+                        <h1 class="counter Starting">1967</h1>
+                        <p>Members</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="counter-box">
+                        <i class="flaticon-briefcase"></i>
+                        <h1 class="counter Starting">667</h1>
+                        <p>Jobs</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="counter-box">
+                        <i class="flaticon-resume"></i>
+                        <h1 class="counter Starting">475</h1>
+                        <p>Resumes</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="counter-box">
+                        <i class="flaticon-company"></i>
+                        <h1 class="counter Starting">475</h1>
+                        <p>Companies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- #endregion Counters end -->
+    <!-- #region Body Content start -->
     <div class="container">
         <div class="row" style="min-height:440px;">
             @RenderBody()
         </div>
-
     </div>
-       
-
-        <!--Footer-->
-    <footer class="myfooter">
-        <div class="container">
+    <!-- #endregion Body Content end -->
+    <!-- #region Footer start -->
+    <footer class="myfooter footer">
+        <div class="container footer-inner">
             <div class="row">
                 <!-- المكون هنا من 3 عناصرfooter محتوى ال-->
-                <div class="col-md-4">
-                    <h3>
-                        <i class="glyphicon glyphicon-question-sign"></i>
-                        من نحن ؟ 
-                    </h3>
-                    <p>
-شركة softChallengers لتطوير البرامج
-                        جميع المجالات 
-                    </p>
-
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                    <div class="footer-item">
+                        <h4>
+                            <i class="glyphicon glyphicon-paperclip"></i>
+                            روابط مهمه
+                        </h4>
+                        <div class="s-border"></div>
+                        <div class="m-border"></div>
+                        <ul class="links">
+                            <li><a href="#">وظائف للقطاع الخاص</a></li>
+                            <li><a href="#">وظائف للقطاع العام</a></li>
+                            <li><a href="#">وظائف خارج البلاد</a></li>
+                            <li><a href="#">وظائف متنوعه</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <h3>
-                        <i class="glyphicon glyphicon-paperclip"></i>
-                        روابط مهمه 
-                    </h3>
-                    <ul>
-                        <li><a href="#">وظائف للقطاع الخاص</a></li>
-                        <li><a href="#">وظائف للقطاع العام</a></li>
-                        <li><a href="#">وظائف خارج البلاد</a></li>
-                        <li><a href="#">وظائف متنوعه</a></li>
-                    </ul>
 
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                    <div class="footer-item">
+                        <h4>
+                            <i class="glyphicon glyphicon-envelope"></i>
+                            تواصل معنا
+                        </h4>
+                        <div class="s-border"></div>
+                        <div class="m-border"></div>
+                        <ul class="links">
+                            <li><a href="#">صفحتنا على الفيس بوك</a></li>
+                            <li><a href="#">صحفتنا على تويتر</a></li>
+                            <li><a href="#">تابعنا على لينكدان</a></li>
+                            <li><a href="~/home/contact">تواصل معنا</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    
-                    <h3>
-                        <i class="glyphicon glyphicon-envelope"></i>
-                        تواصل معنا 
-                    </h3>
-                    <ul>
-                        <li><a href="#">صفحتنا على الفيس بوك</a></li>
-                        <li><a href="#">صحفتنا على تويتر</a></li>
-                        <li><a href="#">تابعنا على لينكدان</a></li>
-                        <li><a href="~/home/contact">اترك لنا رسالة</a></li>
-                    </ul>
 
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                    <div class="footer-item">
+                        <h4>
+                            <i class="glyphicon glyphicon-question-sign"></i>
+                            من نحن ؟
+                        </h4>
+                        <div class="s-border"></div>
+                        <div class="m-border"></div>
+                        <ul class="links">
+                            <li><a href="~/Home/About">عن الموقع</a></li>
+                            <li><p>شركة softChallengers لتطوير البرامج جميع المجالات</p></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="sub-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-9 col-lg-9 col-md-12">
+                        <p class="copy">© 2020 <a href="#">Wazifa.</a> All Rights Reserved For SoftChallengers</p>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-12">
+                        <ul class="social-list clearfix">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-           
-        </div>
-        <div class="subfooter">
-            <span>جميع الحقوق محفوظة لدى شركة SoftChallengers </span>
         </div>
     </footer>
+    <!-- #endregion Footer end -->
 
     <script src="~/Scripts/jquery.js"></script>
     <script src="~/Scripts/bootstrap.min.js"></script>
-    @RenderSection("scripts",required:false)
+    <script>
+        $(window).scroll(function () {
+            if ($(this).scrollTop()) {
+                $('#page_scroller').fadeIn();
+            } else {
+                $('#page_scroller').fadeOut();
+            }
+        });
+
+    </script>
+    @RenderSection("scripts", required: false)
+
+    <a id="page_scroller" href="#" style="position: fixed; z-index: 2147483647;"><i class="fa fa-chevron-up"></i></a>
+    <script src="~/Scripts/A js.js"></script>
 </body>
 </html>
